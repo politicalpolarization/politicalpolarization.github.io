@@ -1,0 +1,20 @@
+title: Political Polarization
+description: Studying of polarization through different social medias across various events
+sitename: Complex Data Lab
+baseurl: ""
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+collections:
+  features:
+    directory: _features
+  team_investigators:
+    directory: _team_investigators
+  team_members:
+    directory: _team_investigators
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.txt
+  - CNAME

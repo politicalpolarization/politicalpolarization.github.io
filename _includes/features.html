@@ -1,0 +1,20 @@
+<main>
+  {% for feature in site.features %}
+
+  <hr id="{{ feature.ref }}" />
+
+  <section>
+    <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ feature.image
+    }}'>
+    <h2>{{ feature.heading }}<span>{{ feature.subheading }}</span></h2>
+
+    <div class="lead">{{ feature.content | markdownify }}</div>
+
+    {% if feature.heading == "TEAM" %} {% include team_investigators.html %}
+    <div class="lead">The other team members are :</div>
+    {% include team_members.html %} {% endif %}
+  </section>
+  {% endfor %}
+
+  <hr />
+</main>

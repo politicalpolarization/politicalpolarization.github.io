@@ -1,0 +1,16 @@
+<section class="team_investigators container">
+  <br />
+  {% for member in site.team_investigators %}
+  <br />
+  <div id="{{ members.name }}">
+    <section>
+      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ member.image
+      }}' width="250px" height="250px" >
+      <h2>{{ member.name }}</h2>
+      <div class="lead">{{ member.content | markdownify }}</div>
+    </section>
+    <br />
+  </div>
+  {% endfor %}
+  <br />
+</section>
