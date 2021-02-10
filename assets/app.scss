@@ -15,7 +15,7 @@ layout: compress
   position: relative;
 }
 
-.background_image::before {
+.background_image:before {
   content: "";
   opacity: 0.8;
   background-image: url("./images/wind_wave-other.jpg");
