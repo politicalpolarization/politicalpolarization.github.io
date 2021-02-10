@@ -6,7 +6,7 @@
 .background_image::before {
   content: "";
   opacity: 0.8;
-  background-image: url("{{ site.baseurl }}//assets/images/wind_wave-other.jpg");
+  background-image: url("{{ site.baseurl }}/assets/images/wind_wave-other.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.75;
