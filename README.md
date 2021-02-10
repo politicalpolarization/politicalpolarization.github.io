@@ -35,3 +35,7 @@ bundle exec jekyll serve #local website serving
 - Add a new .md file with the same format to add another entry.
 
 5. Documentation on Jekyll: https://jekyllrb.com/docs/structure/
+
+## Notes:
+
+- Github Pages do not render pseudo elements specified in the css files.
