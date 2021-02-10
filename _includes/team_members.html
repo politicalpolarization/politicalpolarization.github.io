@@ -3,15 +3,14 @@
   {% for member in site.team_members %}
   <br />
   <div id="{{ members.name }}">
-    <section>
-      <img class='{% cycle 'pull-right', 'pull-left' %}' src='{{ member.image
-      }}' width="250px" height="250px">
-      <h2>{{ member.name }}</h2>
+    <h2>{{ member.name }}</h2>
+    <section class="well clearfix justify-content-center">
+      <img class='{% cycle 'pull-right', 'pull-left' %} avatar my-auto' src='{{
+      member.image }}' >
       <div class="lead">{{ member.content | markdownify }}</div>
     </section>
     <br />
   </div>
   {% endfor %}
-
   <br />
 </section>
